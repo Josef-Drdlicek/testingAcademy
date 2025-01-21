@@ -32,10 +32,6 @@ Task Manager je jednoduchá aplikace vytvořená v Pythonu, která umožňuje sp
 ## 🧩 Struktura projektu
 task_manager_project/ │ ├── task_manager.py # Hlavní soubor s aplikací ├── test_task_manager.py # Soubory s automatickými testy ├── pycache/ # Složka s kompilovanými Python soubory └── README.md # Popis projektu
 
-yaml
-Zkopírovat
-Upravit
-
 ---
 
 ## 🚀 Jak spustit projekt
