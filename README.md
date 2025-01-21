@@ -41,16 +41,10 @@ task_manager_project/ │ ├── task_manager.py # Hlavní soubor s aplikací
    cd testingAcademy
 Spusťte aplikaci:
 
-bash
-Zkopírovat
-Upravit
-python task_manager.py
+bash python task_manager.py
 Spusťte testy:
 
-bash
-Zkopírovat
-Upravit
-python -m unittest test_task_manager.py
+bash python -m unittest test_task_manager.py
 🧪 Testování
 Aplikace obsahuje automatické testy, které pokrývají:
 
@@ -59,10 +53,7 @@ Zobrazení všech úkolů
 Odstranění úkolu
 Chcete-li spustit všechny testy:
 
-bash
-Zkopírovat
-Upravit
-python -m unittest discover
+bash python -m unittest discover
 📌 Poznámky k vývoji
 Tento projekt byl vytvořen jako součást vzdělávacího kurzu na téma programování a testování v Pythonu. Cílem bylo procvičit:
 
