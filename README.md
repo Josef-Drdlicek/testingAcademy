@@ -29,13 +29,13 @@ Task Manager je jednoduchá aplikace vytvořená v Pythonu, která umožňuje sp
 
 ---
 
-## 🧩 Struktura projektu
+## 🧬 Struktura projektu
 ```
 task_manager_project/
 ├── task_manager.py        # Hlavní soubor s aplikací
 ├── test_task_manager.py   # Soubory s automatickými testy
-├── pycache/              # Složka s kompilovanými Python soubory
-└── README.md             # Popis projektu
+├── pycache/               # Složka s kompilovanými Python soubory
+└── README.md              # Popis projektu
 ```
 
 ---
@@ -60,29 +60,75 @@ task_manager_project/
 
 ---
 
-## 🧪 Testování
+## 🔍 Testovací případy
 
-Aplikace obsahuje automatické testy, které pokrývají:
+### Testovací případy pro `main_menu()`
 
-- Přidání úkolu
-- Zobrazení všech úkolů
-- Odstranění úkolu
-
-Chcete-li spustit všechny testy:
-```bash
-python -m unittest discover
-```
-
----
-
-## 📌 Poznámky k vývoji
-Tento projekt byl vytvořen jako součást vzdělávacího kurzu na téma programování a testování v Pythonu. Cílem bylo procvičit:
-
-- Použití funkcí v Pythonu.
-- Základy testování pomocí unittest.
-- Správu verzí s Git a GitHub.
+**Název:** Test volby v hlavním menu  
+**Popis:** Ověření, že volba čísla 1 v hlavním menu správně spustí funkci `pridej_ukol`.  
+**Vstupní podmínky:** Program zobrazuje hlavní menu.  
+**Kroky testu:**
+1. Spusťte program.
+2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb ("1. Přidat nový úkol", "2. Zobrazit všechny úkoly" atd.).
+3. Zadejte číslo 1 a potvrďte stisknutím klávesy Enter.  
+**Očekávaný výsledek:** Program spustí funkci `pridej_ukol()`.  
+**Skutečný výsledek:** Funkce `pridej_ukol()` byla spuštěna a program zobrazil výzvu k zadání nového úkolu.  
+**Stav:** Pass  
+**Poznámky:** Tento případ ověřuje funkčnost navigace z hlavního menu a správné spuštění klíčové funkce programu.
 
 ---
 
-## 🖍️ Autor
-Josef Drdlíček
+### Testovací případy pro `pridej_ukol()`
+
+**Název:** Přidání platného úkolu  
+**Popis:** Ověření, že funkce správně přidá platný úkol do seznamu.  
+**Vstupní podmínky:** Seznam úkolů je prázdný.  
+**Kroky testu:**
+1. Spusťte program a zvolte možnost "1. Přidat nový úkol".
+2. Zadejte popis úkolu: "Nakoupit potraviny".
+3. Potvrďte zadání klávesou Enter.  
+**Očekávaný výsledek:** Úkol "Nakoupit potraviny" je uložen do seznamu.  
+**Skutečný výsledek:** Úkol byl uložen do seznamu a zobrazila se potvrzovací zpráva.  
+**Stav:** Pass  
+**Poznámky:** Test ověřuje, že funkce správně ukládá úkoly a poskytuje uživatelskou odezvu.
+
+---
+
+### Testovací případy pro `zobraz_vsechny_ukoly()`
+
+**Název:** Zobrazení prázdného seznamu  
+**Popis:** Ověření, že funkce správně informuje uživatele, pokud je seznam úkolů prázdný.  
+**Vstupní podmínky:** Seznam úkolů je prázdný.  
+**Kroky testu:**
+1. Spusťte program a zvolte možnost "2. Zobrazit všechny úkoly".  
+**Očekávaný výsledek:** Program zobrazí zprávu "Žádné úkoly nejsou k dispozici".  
+**Skutečný výsledek:** Zpráva byla zobrazena.  
+**Stav:** Pass  
+**Poznámky:** Tento test je důležitý pro ověření správné komunikace s uživatelem v případě prázdného seznamu.
+
+---
+
+### Testovací případy pro `odstran_ukol()`
+
+**Název:** Odstranění platného úkolu  
+**Popis:** Ověření, že funkce správně odstraní vybraný úkol podle jeho čísla.  
+**Vstupní podmínky:** Seznam úkolů obsahuje tři úkoly.  
+**Kroky testu:**
+1. Spusťte program a zvolte možnost "3. Odstranit úkol".
+2. Zadejte číslo 2 a potvrďte.  
+**Očekávaný výsledek:** Druhý úkol je odstraněn a zbývající úkoly jsou posunuty.  
+**Skutečný výsledek:** Úkol byl odstraněn a seznam byl aktualizován.  
+**Stav:** Pass  
+**Poznámky:** Tento test ověřuje klíčovou funkcionalitu programu a správné chování při změně seznamu.
+
+---
+
+## 🔧 Další kroky
+- [ ] Implementace uložení seznamu úkolů do souboru.
+- [ ] Rozšíření aplikace o grafické rozhraní (GUI).
+
+---
+
+## 🔧 Autor
+Josef Drdlíček  
+[GitHub Profil](https://github.com/Josef-Drdlicek)
