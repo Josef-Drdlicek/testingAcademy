@@ -45,6 +45,7 @@ bash python task_manager.py
 Spusťte testy:
 
 bash python -m unittest test_task_manager.py
+
 🧪 Testování
 Aplikace obsahuje automatické testy, které pokrývají:
 
