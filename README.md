@@ -30,36 +30,59 @@ Task Manager je jednoduchá aplikace vytvořená v Pythonu, která umožňuje sp
 ---
 
 ## 🧩 Struktura projektu
-task_manager_project/ │ ├── task_manager.py # Hlavní soubor s aplikací ├── test_task_manager.py # Soubory s automatickými testy ├── pycache/ # Složka s kompilovanými Python soubory └── README.md # Popis projektu
+```
+task_manager_project/
+├── task_manager.py        # Hlavní soubor s aplikací
+├── test_task_manager.py   # Soubory s automatickými testy
+├── pycache/              # Složka s kompilovanými Python soubory
+└── README.md             # Popis projektu
+```
 
 ---
 
 ## 🚀 Jak spustit projekt
+
 1. Klonujte repozitář:
    ```bash
    git clone git@github.com:Josef-Drdlicek/testingAcademy.git
    cd testingAcademy
-Spusťte aplikaci:
+   ```
 
-bash python task_manager.py
-Spusťte testy:
+2. Spusťte aplikaci:
+   ```bash
+   python task_manager.py
+   ```
 
-bash python -m unittest test_task_manager.py
+3. Spusťte testy:
+   ```bash
+   python -m unittest test_task_manager.py
+   ```
 
-🧪 Testování
+---
+
+## 🧪 Testování
+
 Aplikace obsahuje automatické testy, které pokrývají:
 
-Přidání úkolu
-Zobrazení všech úkolů
-Odstranění úkolu
-Chcete-li spustit všechny testy:
+- Přidání úkolu
+- Zobrazení všech úkolů
+- Odstranění úkolu
 
-bash python -m unittest discover
-📌 Poznámky k vývoji
+Chcete-li spustit všechny testy:
+```bash
+python -m unittest discover
+```
+
+---
+
+## 📌 Poznámky k vývoji
 Tento projekt byl vytvořen jako součást vzdělávacího kurzu na téma programování a testování v Pythonu. Cílem bylo procvičit:
 
-Použití funkcí v Pythonu.
-Základy testování pomocí unittest.
-Správu verzí s Git a GitHub.
-📝 Autor
+- Použití funkcí v Pythonu.
+- Základy testování pomocí unittest.
+- Správu verzí s Git a GitHub.
+
+---
+
+## 🖍️ Autor
 Josef Drdlíček
