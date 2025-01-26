@@ -60,11 +60,6 @@ task_manager_project/
 
 ---
 
-## 🔍 Testovací případy
-
-Najdete v souboru testovaci-pripady.txt
----
-
 ## 🔧 Autor
 Josef Drdlíček  
 [GitHub Profil](https://github.com/Josef-Drdlicek)
