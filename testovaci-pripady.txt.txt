@@ -1,0 +1,66 @@
+Název testovacího případu: Volba čísla 1 v hlavním menu spustí funkci pridat_ukol  
+Popis: Ověření, že volba čísla 1 v hlavním menu správně spustí funkci pridat_ukol.  
+Vstupní podmínky: Program zobrazuje hlavní menu.  
+Kroky testu:  
+1. Spusťte program.  
+2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb (např. "1 - Přidat úkol", "2 - Zobrazit úkoly" atd.).  
+3. Zadejte číslo 1 a potvrďte stisknutím klávesy Enter.  
+Očekávaný výsledek: Program spustí funkci pridat_ukol().  
+Skutečný výsledek: Funkce pridat_ukol() byla spuštěna a program zobrazil výzvu k zadání nového úkolu.  
+Stav: Pass  
+Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a funkčnost jedné z klíčových funkcí programu.  
+
+---
+
+Název testovacího případu: Přidání nového úkolu s platnými vstupy  
+Popis: Ověření, že funkce pridat_ukol správně přidá nový úkol při zadání platných dat.  
+Vstupní podmínky: Seznam úkolů je prázdný.  
+Kroky testu:  
+1. Spusťte program.  
+2. Z hlavního menu vyberte možnost "1 - Přidat úkol".  
+3. Zadejte název úkolu "Nakoupit potraviny" a potvrďte stisknutím klávesy Enter.  
+Očekávaný výsledek: Úkol "Nakoupit potraviny" je přidán do seznamu úkolů. Program zobrazí potvrzení o přidání.  
+Skutečný výsledek: Úkol "Nakoupit potraviny" byl přidán a program zobrazil potvrzení.  
+Stav: Pass  
+Poznámky: Test ověřuje, že funkce správně zpracovává validní vstupy.  
+
+---
+
+Název testovacího případu: Přidání úkolu s prázdným názvem  
+Popis: Ověření, že funkce pridat_ukol ošetří chybu, pokud je zadán prázdný název úkolu.  
+Vstupní podmínky: Seznam úkolů obsahuje alespoň jeden úkol.  
+Kroky testu:  
+1. Spusťte program.  
+2. Z hlavního menu vyberte možnost "1 - Přidat úkol".  
+3. Nechte pole pro zadání názvu úkolu prázdné a stiskněte Enter.  
+Očekávaný výsledek: Program zobrazí chybovou zprávu, že název úkolu nemůže být prázdný. Úkol nebude přidán.  
+Skutečný výsledek: Program zobrazil chybovou zprávu a úkol nebyl přidán.  
+Stav: Pass  
+Poznámky: Test ověřuje, že funkce správně ošetřuje neplatné vstupy.  
+
+---
+
+Název testovacího případu: Zobrazení úkolů při prázdném seznamu  
+Popis: Ověření, že funkce zobrazit_ukoly správně zpracuje situaci, kdy seznam úkolů je prázdný.  
+Vstupní podmínky: Seznam úkolů je prázdný.  
+Kroky testu:  
+1. Spusťte program.  
+2. Z hlavního menu vyberte možnost "2 - Zobrazit úkoly".  
+Očekávaný výsledek: Program zobrazí zprávu "Seznam úkolů je prázdný".  
+Skutečný výsledek: Program zobrazil zprávu "Seznam úkolů je prázdný".  
+Stav: Pass  
+Poznámky: Tento případ testuje správné chování programu při hraničním stavu.  
+
+---
+
+Název testovacího případu: Odstranění posledního úkolu ze seznamu  
+Popis: Ověření, že funkce odstranit_ukol správně odstraní poslední úkol ze seznamu.  
+Vstupní podmínky: Seznam úkolů obsahuje jeden úkol "Nakoupit potraviny".  
+Kroky testu:  
+1. Spusťte program.  
+2. Z hlavního menu vyberte možnost "3 - Odstranit úkol".  
+3. Zadejte číslo úkolu odpovídající "Nakoupit potraviny" a potvrďte.  
+Očekávaný výsledek: Úkol "Nakoupit potraviny" je odstraněn. Program zobrazí potvrzení o odstranění.  
+Skutečný výsledek: Úkol byl odstraněn a program zobrazil potvrzení.  
+Stav: Pass  
+Poznámky: Tento test ověřuje, že funkce správně zpracovává odstranění úkolu a aktualizuje seznam.  
